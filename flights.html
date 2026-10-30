@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Find a flight — Vola ut Avis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+<header class="main-head">
+    <div class="main-text-head">
+    <a href="./index.html"><img class="main-title" src="img/Logo.png" alt="Vola ut Avis"></a>
+
+    <nav class="nav-to-header">
+        <a href="./index.html#destinations" class="Destinations-a">Destinations</a>
+        <a href="./index.html#faq" class="FAQ-a">FAQ</a>
+        <a href="./flights.html" class="Find-a-flight-a">Find a flight</a>
+    </nav>
+    </div>
+</header>
+
+
+<main class="flight-page">
+    <h1 class="h1-flight">Find your flight</h1>
+    <form id="form-to-search">
+        <div class="search-field">
+        <label for="select-from">From</label>
+            <select name="From" id="select-from" required class="select-and-input">
+                <option value="">Choose a city</option>
+                <option value="prague">Prague</option>
+                <option value="rome">Rome</option>
+                <option value="barcelona">Barcelona</option>
+            </select>
+        </div>
+        <div class="search-field">
+            <label for="select-to">To</label>
+            <select name="to" id="select-to" required class="select-and-input">
+                <option value="">Choose a city</option>
+                <option value="prague">Prague</option>
+                <option value="rome">Rome</option>
+                <option value="barcelona">Barcelona</option>
+            </select>
+        </div>
+        <div class="search-field">
+            <label for="date-input">Departure date</label>
+            <input type="date" id="date-input" required class="select-and-input">
+        </div>
+        <div class="search-field">
+            <label for="num-passeng">Passengers</label>
+            <input type="number" min="1" max="6" value="1" id="num-passeng" required class="select-and-input">
+        </div>
+        <button type="submit" id="search-flight">Search flights</button>
+    </form>
+    <p id="error-text"></p>
+    <p class="text-place">Demo schedule: sample flights operate daily. Prices are per passenger in EUR.</p>
+    <ul id="ul-for-filter"></ul>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-div">
+        <div class="footer-div-contacts">
+            <h3 class="h3-contacts">Contact</h3>
+            <a href="https://github.com/Postrel-prog/vola-ut-avis">GitHub project</a>
+        </div>
+
+        <div class="footer-div-main">
+            <h3 class="h3-footer-div">Vola ut Avis</h3>
+            <p class="p-footer-div">A fictional airline website created as a frontend portfolio project.</p>
+        </div>
+
+        <div class="footer-div-href">
+            <a href="./index.html#about">About us</a>
+            <a href="./index.html#destinations">Destinations</a>
+            <a href="./index.html#faq">FAQ</a>
+            <a href="./flights.html">Find a flight</a>
+        </div>
+    </div>
+
+    <p class="footer-footer">Demo only. No real flights, reservations or payments.</p>
+</footer>
+
+<dialog id="showEndStep" aria-labelledby="h2-end-step">
+    <h2 id="h2-end-step">Demo flight summary</h2>
+    <p class="p-end-step">This is a demo. No reservation has been made and no payment has been taken.</p>
+    <div id="placeForEndText"></div>
+    <button class="close-end-step" autofocus type="button">Close</button>
+</dialog>
+
+<script src="./flights.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vola ut Avis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+<header class="main-head">
+    <div class="main-text-head">
+    <a href="./index.html"><img class="main-title" src="img/Logo.png" alt="Vola ut Avis"></a>
+
+    <nav class="nav-to-header">
+        <a href="#destinations" class="Destinations-a">Destinations</a>
+        <a href="#faq" class="FAQ-a">FAQ</a>
+        <a href="./flights.html" class="Find-a-flight-a">Find a flight</a>
+    </nav>
+    </div>
+</header>
+
+
+<main class="main-page">
+    <section class="section-first-main">
+        <div class="hero-viewport">
+            <div class="hero-slide slide-plane">
+                <div class="main-text">
+                    <h1 class="h1-main">Fly like a bird</h1>
+                    <p class="description-main">Discover a new perspective on European travel</p>
+                    <a href="./flights.html" class="Find-a-flight-a-main">Find a flight</a>
+                </div>
+            </div>
+            <div class="hero-slide slide-checkin" hidden>
+                <div class="main-text">
+                    <h2 class="h1-main">Your next journey starts here.</h2>
+                    <p class="description-main">Find a flight that fits your plans.</p>
+                    <a href="./flights.html" class="Find-a-flight-a-main">Find a flight</a>
+                </div>
+            </div>
+            <div class="hero-slide slide-airport" hidden>
+                <div class="main-text">
+                    <h2 class="h1-main">A new view awaits.</h2>
+                    <p class="description-main">Discover your next European destination.</p>
+                    <a href="./flights.html" class="Find-a-flight-a-main">Find a flight</a>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-for-slide">
+            <button type="button" id="previous-slide" class="button-for-slide">Previous slide</button>
+            <button type="button" id="toggle-slideshow" class="button-for-slide">Play slideshow</button>
+            <button type="button" id="next-slide" class="button-for-slide">Next slide</button>
+        </div>
+    </section>
+
+    <section id="destinations">
+        <h2 class="h2-secnd-section">Popular destinations</h2>
+        <div class="city-card-all">
+            <article class="city-card">
+                <img class="city-img" src="img/praga.jpg" alt="Prague">
+                <div class="text-in-card">
+                    <h3 class="h3-city-card">
+                        Prague
+                    </h3>
+                    <a href="./flights.html" class="city-card-href">Explore flights</a>
+                </div>
+            </article>
+
+            <article class="city-card">
+                <img class="city-img" src="img/rom.jpg" alt="Rome">
+                <div class="text-in-card">
+                    <h3 class="h3-city-card">
+                        Rome
+                    </h3>
+                    <a href="./flights.html" class="city-card-href">Explore flights</a>
+                </div>
+                
+            </article>
+
+            <article class="city-card">
+                <img class="city-img" src="img/barcelona.jpg" alt="Barcelona">
+                <div class="text-in-card">
+                    <h3 class="h3-city-card">
+                        Barcelona
+                    </h3>
+                    <a href="./flights.html" class="city-card-href">Explore flights</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-inner">
+            <div class="text-about">
+                <h2 class="text-about-h2">A simpler way to explore Europe</h2>
+                <p class="text-about-p">From familiar favourites to somewhere new, Vola ut Avis brings your next European journey closer.</p>
+            </div>
+            <ul class="all-li-about">
+                <li class="li-about">
+                    <h3 class="h3-about">Direct routes</h3>
+                    <p class="text-about-li">Spend less time connecting and more time exploring.</p>
+                </li>
+
+                <li class="li-about">
+                    <h3 class="h3-about">Clear choices</h3>
+                    <p class="text-about-li">Compare departure times and fares in one place.</p>
+                </li>
+
+                <li class="li-about">
+                    <h3 class="h3-about">Travel at your pace</h3>
+                    <p class="text-about-li">Choose the flight that fits your plans.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="faq">
+        <h2 class="h2-faq">Frequently asked questions</h2>
+        <details class="first-details">
+            <summary class="first-summary">
+                Can I book a real flight on this website?
+            </summary>
+            <p class="p-simmary">No. This is a portfolio demo. You can explore sample flights, but no reservation is made and no payment is taken.</p>
+        </details>
+        <details class="first-details">
+            <summary class="first-summary">
+                Which routes can I explore?
+            </summary>
+            <p class="p-simmary">The demo includes selected European routes. Available options will be shown on the flight search page.</p>
+        </details>
+        <details class="first-details">
+            <summary class="first-summary">
+                How is the total price calculated?
+            </summary>
+            <p class="p-simmary">The total is the selected flight’s fare per passenger multiplied by the number of passengers.</p>
+        </details>
+    </section>
+
+</main>
+
+<footer class="main-footer">
+    <div class="footer-div">
+        <div class="footer-div-contacts">
+            <h3 class="h3-contacts">Contact</h3>
+            <a href="https://github.com/Postrel-prog/vola-ut-avis">GitHub project</a>
+        </div>
+
+        <div class="footer-div-main">
+            <h3 class="h3-footer-div">Vola ut Avis</h3>
+            <p class="p-footer-div">A fictional airline website created as a frontend portfolio project.</p>
+        </div>
+
+        <div class="footer-div-href">
+            <a href="#about">About us</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#faq">FAQ</a>
+            <a href="./flights.html">Find a flight</a>
+        </div>
+    </div>
+
+    <p class="footer-footer">Demo only. No real flights, reservations or payments.</p>
+
+</footer>
+
+<script src="./home.js" type="module"></script>
+
+</body>
+</html>
